@@ -43,16 +43,44 @@
       </tags>
   </entry>
   <entry>
-    <title>Level.5.5</title>
-    <url>/2023/06/30/Level.5.5/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Ko↗Ko↘da↘yo↗</p>
-<p>j 0v7 kkk 0u</p>
+    <title>【学习总结】并查集</title>
+    <url>/2023/10/20/%E3%80%90%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="什么是并查集">什么是并查集</h2>
+<blockquote>
+<p>并查集是一种用于管理元素所属集合的数据结构，实现为一个森林，其中每棵树表示一个集合，树中的节点表示对应集合中的元素。</p>
+</blockquote>
+<blockquote>
+<p>——<strong>摘自oiwiki</strong></p>
+</blockquote>
+<p>简单来说,并查集是一种可以快速求出<strong>一个元素的祖先</strong>的数据结构</p>
+<h2 id="并查集的初始化">并查集的初始化</h2>
+<p>通常，我们将每个节点的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">f_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 设为自己，即 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span>。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i]=i;</span><br></pre></td></tr></table></figure>
+<h2 id="并查集的查询（普通）">并查集的查询（普通）</h2>
+<p>通过不断递归来查找元素所在的根</p>
+<p><img src="https://oiwiki.com/ds/images/disjoint-set-find.svg" alt="" /></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">find</span>(f[x]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这种情况下，如果树的高度很大，那么单次查询的时间复杂度为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
+<h2 id="并查集的查询-路径压缩">并查集的查询(路径压缩)</h2>
+<p>每次查询之后直接将此节点接在集合代表节点的下方，以后的查询就是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的了。均摊时间复杂度为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f[x]==x)<span class="keyword">return</span> x;</span><br><span class="line">	f[x]=<span class="built_in">find</span>(f[x]);</span><br><span class="line">	<span class="keyword">return</span> f[x];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="并查集的合并">并查集的合并</h2>
+<p>可以理解为将一个并查集接在另一个并查集的根节点上</p>
+<p><img src="https://oiwiki.com/ds/images/disjoint-set-merge.svg" alt="" /></p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">move</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> fx=<span class="built_in">find</span>(x),fy=<span class="built_in">find</span>(y);</span><br><span class="line">	<span class="keyword">if</span>(fx!=fy)&#123;</span><br><span class="line">		f[fx]=fy;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="带权并查集">带权并查集</h2>
+<p>即边权带值的并查集。</p>
+<p>即一个并查集在合并，查询的过程中还需要维护边权上的权值总和。</p>
+<p>例题:</p>
+<p><a href="https://www.luogu.com.cn/problem/P1196">P1196 银河英雄传说</a></p>
+<p><a href="https://www.luogu.com.cn/problem/P1525">P1525 关押罪犯</a></p>
+<p><a href="https://www.luogu.com.cn/problem/P5092">P5092 方块游戏</a></p>
 ]]></content>
       <categories>
-        <category>娱乐</category>
+        <category>OI</category>
       </categories>
       <tags>
-        <tag>云剪贴版解密</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
 </search>
