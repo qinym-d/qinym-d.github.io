@@ -57,104 +57,8 @@
         style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
       
     <main class="content on">
-      
-<section class="cover">
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="/images/cover4.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Eel_qin 的小窝</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
-
-
-
-<script src="https://cdn.staticfile.org/typed.js/2.0.12/typed.min.js"></script>
-
-
-<!-- Subtitle -->
-
-  <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['如果可以，给个关注吧亲！', '期望CSP-J 1= (*^▽^*)', 'I AK IOI(划掉)'],
-        startDelay: 0,
-        typeSpeed: 300,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
-  
-<div id="main">
-  <section class="outer">
-  
-  
-  
-
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content" id="broad"></div>
-</div>
-<script type="text/javascript">
-    fetch('https://v1.hitokoto.cn')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("broad").innerHTML = data.hitokoto;
-        })
-        .catch(console.error)
-</script>
-
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-    }
-
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-</style>
-  
-  <article class="articles">
-    
-    
-    
-    
-    <article
+      <section class="outer">
+  <article
   id="post-CF1900D - Small GCD【数论超好题】"
   class="article article-type-post"
   itemscope
@@ -166,9 +70,34 @@
     <div class="article-meta">
       <a href="/2023/11/28/CF1900D%20-%20Small%20GCD%E3%80%90%E6%95%B0%E8%AE%BA%E8%B6%85%E5%A5%BD%E9%A2%98%E3%80%91/" class="article-date">
   <time datetime="2023-11-28T15:20:54.190Z" itemprop="datePublished">2023-11-28</time>
-</a>    
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">985</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">4 分钟</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
       
+    <div class="tocbot"></div>
+
+
+
+
+  
     <div class="article-entry" itemprop="articleBody">
        
   <h1>CF1900D - Small GCD【数论超好题】</h1>
@@ -215,279 +144,82 @@
     
     <footer class="article-footer">
        
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-【学习总结】并查集"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/10/20/%E3%80%90%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86/"
-    >【学习总结】并查集</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/10/20/%E3%80%90%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="article-date">
-  <time datetime="2023-10-20T13:19:34.000Z" itemprop="datePublished">2023-10-20</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/OI/">OI</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h2 id="什么是并查集">什么是并查集</h2>
-<blockquote>
-<p>并查集是一种用于管理元素所属集合的数据结构，实现为一个森林，其中每棵树表示一个集合，树中的节点表示对应集合中的元素。</p>
-</blockquote>
-<blockquote>
-<p>——<strong>摘自oiwiki</strong></p>
-</blockquote>
-<p>简单来说,并查集是一种可以快速求出<strong>一个元素的祖先</strong>的数据结构</p>
-<h2 id="并查集的初始化">并查集的初始化</h2>
-<p>通常，我们将每个节点的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">f_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 设为自己，即 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span>。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++) f[i]=i;</span><br></pre></td></tr></table></figure>
-<h2 id="并查集的查询（普通）">并查集的查询（普通）</h2>
-<p>通过不断递归来查找元素所在的根</p>
-<p><img src="https://oiwiki.com/ds/images/disjoint-set-find.svg" alt="" /></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f[x] == x) <span class="keyword">return</span> x;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">find</span>(f[x]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这种情况下，如果树的高度很大，那么单次查询的时间复杂度为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
-<h2 id="并查集的查询-路径压缩">并查集的查询(路径压缩)</h2>
-<p>每次查询之后直接将此节点接在集合代表节点的下方，以后的查询就是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 的了。均摊时间复杂度为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">find</span><span class="params">(<span class="type">int</span> x)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(f[x]==x)<span class="keyword">return</span> x;</span><br><span class="line">	f[x]=<span class="built_in">find</span>(f[x]);</span><br><span class="line">	<span class="keyword">return</span> f[x];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="并查集的合并">并查集的合并</h2>
-<p>可以理解为将一个并查集接在另一个并查集的根节点上</p>
-<p><img src="https://oiwiki.com/ds/images/disjoint-set-merge.svg" alt="" /></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">move</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span></span>&#123;</span><br><span class="line">	<span class="type">int</span> fx=<span class="built_in">find</span>(x),fy=<span class="built_in">find</span>(y);</span><br><span class="line">	<span class="keyword">if</span>(fx!=fy)&#123;</span><br><span class="line">		f[fx]=fy;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="带权并查集">带权并查集</h2>
-<p>即边权带值的并查集。</p>
-<p>即一个并查集在合并，查询的过程中还需要维护边权上的权值总和。</p>
-<p>例题:</p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1196">P1196 银河英雄传说</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1525">P1525 关押罪犯</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5092">P5092 方块游戏</a></p>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">学习笔记</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-About Me"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/06/30/About%20Me/"
-    >About Me</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/06/30/About%20Me/" class="article-date">
-  <time datetime="2023-06-30T01:51:28.000Z" itemprop="datePublished">2023-06-30</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%85%B3%E4%BA%8E%E6%88%91/">关于我</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="monospace">A</mi><mi mathvariant="monospace">b</mi><mi mathvariant="monospace">o</mi><mi mathvariant="monospace">u</mi><mi mathvariant="monospace">t</mi><mtext>  </mtext><mi mathvariant="monospace">M</mi><mi mathvariant="monospace">e</mi></mrow><annotation encoding="application/x-tex">\mathtt {About \; Me}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6111em;"></span><span class="mord"><span class="mord mathtt">About</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathtt">Me</span></span></span></span></span> - 关于我</h1>
-<ul>
-<li>菜只因初一生，彩笔OIer</li>
-<li>CSP-J 2=</li>
-<li>CSP-S 0=</li>
-<li><s>喜欢唱跳rap</s></li>
-<li>坐标 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="monospace">C</mi><mi mathvariant="monospace">Q</mi></mrow><annotation encoding="application/x-tex">\mathtt{CQ}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.75em;vertical-align:-0.1389em;"></span><span class="mord"><span class="mord mathtt">CQ</span></span></span></span></span> \mathtt\color{purple}NY</li>
-<li>被机房dalao碾压</li>
-</ul>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/About/" rel="tag">About</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-CF1179A Valeriy and Deque"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/06/26/CF1179A%20Valeriy%20and%20Deque/"
-    >CF1179A Valeriy and Deque</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/06/26/CF1179A%20Valeriy%20and%20Deque/" class="article-date">
-  <time datetime="2023-06-26T05:19:28.000Z" itemprop="datePublished">2023-06-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/OI/">OI</a> / <a class="article-category-link" href="/categories/OI/%E9%A2%98%E8%A7%A3/">题解</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="CF1179A-Valeriy-and-Deque"><a href="#CF1179A-Valeriy-and-Deque" class="headerlink" title="CF1179A Valeriy and Deque"></a>CF1179A Valeriy and Deque</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>首先，每次操作后会将大的那个数排至队首。所以说，当队列中最大的那个数到达队首时，队首元素将<strong>不再改变</strong>，而其他的元素依次循环。因此，我们可以记录最大数不在队首之前的操作，在其到达队首之后，记录其余元素的循环节即可。注意：需要记录使最大数到达队首的步数，以便询问时判断取用哪个数组中的答案。</p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN = <span class="number">1e5</span> + <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span> n, m, maxn, a, b;</span><br><span class="line">deque&lt;<span class="type">int</span>&gt; q;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Ans</span> &#123;<span class="comment">//记录答案</span></span><br><span class="line">	<span class="type">int</span> Max, Min;</span><br><span class="line">&#125; ans[MAXN],res[MAXN];</span><br><span class="line"><span class="type">int</span> cnt,st;<span class="comment">//cnt记录步数</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;<span class="comment">//在最大数未到达前的操作</span></span><br><span class="line">	a = q.<span class="built_in">front</span>();q.<span class="built_in">pop_front</span>();</span><br><span class="line">	b = q.<span class="built_in">front</span>();q.<span class="built_in">pop_front</span>();</span><br><span class="line">	ans[++cnt].Max = a;</span><br><span class="line">	ans[cnt].Min = b;</span><br><span class="line">	q.<span class="built_in">push_front</span>(<span class="built_in">max</span>(a, b));</span><br><span class="line">	q.<span class="built_in">push_back</span>(<span class="built_in">min</span>(a, b));</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld%lld&quot;</span>, &amp;n, &amp;m);</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">		<span class="type">int</span> x;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>, &amp;x);</span><br><span class="line">		maxn = <span class="built_in">max</span>(x, maxn);</span><br><span class="line">		q.<span class="built_in">push_back</span>(x);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">while</span> (q.<span class="built_in">front</span>() != maxn) &#123;</span><br><span class="line">		<span class="built_in">init</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	q.<span class="built_in">pop_front</span>();<span class="comment">//由于队首固定，所以直接弹出</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n<span class="number">-1</span>;i++)&#123;</span><br><span class="line">		res[i].Max=maxn;<span class="comment">//队首数一定为最大数</span></span><br><span class="line">		res[i].Min=q.<span class="built_in">front</span>();</span><br><span class="line">		q.<span class="built_in">pop_front</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line">		<span class="type">int</span> p;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>,&amp;p);</span><br><span class="line">		<span class="keyword">if</span>(p&lt;=cnt)&#123;<span class="comment">//答案判断</span></span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%lld %lld\n&quot;</span>,ans[p].Max,ans[p].Min);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			<span class="type">int</span> len=p-cnt<span class="number">-1</span>;<span class="comment">//循环的次数</span></span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%lld %lld\n&quot;</span>,res[len%(n<span class="number">-1</span>)].Max,res[len%(n<span class="number">-1</span>)].Min);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CodeForces/" rel="tag">CodeForces</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-    <article
-  id="post-CF678D Iterated-Linear-Function"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2023/06/26/CF678D%20Iterated-Linear-Function/"
-    >CF678D Iterated Linear Function</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2023/06/26/CF678D%20Iterated-Linear-Function/" class="article-date">
-  <time datetime="2023-06-26T05:00:57.000Z" itemprop="datePublished">2023-06-26</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/OI/">OI</a> / <a class="article-category-link" href="/categories/OI/%E9%A2%98%E8%A7%A3/">题解</a>
-  </div>
-   
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="CF678D-Iterated-Linear-Function"><a href="#CF678D-Iterated-Linear-Function" class="headerlink" title="CF678D Iterated Linear Function"></a>CF678D Iterated Linear Function</h1><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>$f_{i,x}&#x3D;A\times f_{i-1,x} + B$ 且 $f_{0,x}&#x3D;x$ 求 $f_{n,x}$。</p>
-<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>这道题的递推关系十分清晰。但由于数据范围大（$1\le A,B,x\le 10^<br>9,1\le n \le 10^{18}$），所以这道题只能使用矩阵乘法加速递推。</p>
-<h3 id="矩阵的构造"><a href="#矩阵的构造" class="headerlink" title="矩阵的构造"></a>矩阵的构造</h3><p>我们需要构造一个矩阵 $P$，使得 $\begin{bmatrix}<br>  f_{0,x}&amp; b\<br>  0&amp;0<br>\end{bmatrix}\times P&#x3D; \begin{bmatrix}<br>f_{1,x}&amp;b\<br>0&amp;0<br>\end{bmatrix}$。根据矩阵乘法的规则，我们可以很容易地推出 $P&#x3D;\begin{bmatrix}<br>A&amp;0\<br>1&amp;1\end{bmatrix}$。由于 $f_{0,x}&#x3D;x$，所以要得到 $f_{n,x}$ 就可以转化为求 $\begin{bmatrix}<br>  x&amp; b\<br>  0&amp;0<br>\end{bmatrix}\times P^n &#x3D; \begin{bmatrix}<br>f_{n,x}&amp;b\<br>0&amp;0<br>\end{bmatrix}$，使用矩阵快速幂解决。</p>
-<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> mod = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="type">int</span> m, n, x, y, a, b;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">arr</span> &#123;</span><br><span class="line">	<span class="type">int</span> a[<span class="number">15</span>][<span class="number">15</span>];</span><br><span class="line">	<span class="built_in">arr</span>() &#123;<span class="built_in">memset</span>(a, <span class="number">0</span>, <span class="keyword">sizeof</span> a);&#125;</span><br><span class="line">	arr <span class="keyword">operator</span>*(<span class="type">const</span> arr&amp; B) <span class="type">const</span> &#123;<span class="comment">//重载乘法</span></span><br><span class="line">		arr cur;</span><br><span class="line">		<span class="type">int</span> r;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">2</span>; ++i)</span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">1</span>; k &lt;= <span class="number">2</span>; ++k) &#123;</span><br><span class="line">				r = a[i][k];</span><br><span class="line">				<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">2</span>; ++j)</span><br><span class="line">					cur.a[i][j] += B.a[k][j] * r, cur.a[i][j] %= mod;</span><br><span class="line">			&#125;</span><br><span class="line">		<span class="keyword">return</span> cur;</span><br><span class="line">	&#125;</span><br><span class="line">	arr <span class="keyword">operator</span>^(<span class="type">int</span> x) <span class="type">const</span> &#123;<span class="comment">//重载快速幂</span></span><br><span class="line">		arr cur, res;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">2</span>; ++i) cur.a[i][i] = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">2</span>; ++i)</span><br><span class="line">			<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">2</span>; ++j) res.a[i][j] = a[i][j] % mod;</span><br><span class="line">		<span class="keyword">while</span> (x) &#123;</span><br><span class="line">			<span class="keyword">if</span> (x &amp; <span class="number">1</span>) cur = cur * res;</span><br><span class="line">			res = res * res;</span><br><span class="line">			x &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> cur;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; A, F;<span class="comment">//A对应上文中的P矩阵，F为答案矩阵</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">mode</span><span class="params">(<span class="type">int</span> x, <span class="type">int</span> m)</span> </span>&#123;<span class="keyword">return</span> (x + m) % m;&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;<span class="comment">//初始化</span></span><br><span class="line">	A.a[<span class="number">1</span>][<span class="number">1</span>] = a, A.a[<span class="number">1</span>][<span class="number">2</span>] = <span class="number">0</span>;</span><br><span class="line">	A.a[<span class="number">2</span>][<span class="number">1</span>] = <span class="number">1</span>, A.a[<span class="number">2</span>][<span class="number">2</span>] = <span class="number">1</span>;</span><br><span class="line">	F.a[<span class="number">1</span>][<span class="number">1</span>] = x, F.a[<span class="number">1</span>][<span class="number">2</span>] = b;</span><br><span class="line">	F = F * (A ^ n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld%lld&quot;</span>, &amp;a, &amp;b);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>, &amp;n);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%lld&quot;</span>, &amp;x);</span><br><span class="line">	<span class="built_in">init</span>();</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>, <span class="built_in">mode</span>(F.a[<span class="number">1</span>][<span class="number">1</span>], mod));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CodeForces/" rel="tag">CodeForces</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-   
-  
-</article>
-
-    
-  </article>
-  
-
-  
-</section>
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
 </div>
 
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2023/11/28/CF1900D%20-%20Small%20GCD%E3%80%90%E6%95%B0%E8%AE%BA%E8%B6%85%E5%A5%BD%E9%A2%98%E3%80%91/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2023/10/20/%E3%80%90%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%E3%80%91%E5%B9%B6%E6%9F%A5%E9%9B%86/" class="article-nav-link">
+        <strong class="article-nav-caption">Next</strong>
+        <div class="article-nav-title">【学习总结】并查集</div>
+      </a>
+    
+  </nav>
+
+  
+   
+  
+   
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
+</section>
       <footer class="footer">
   <div class="outer">
     <ul>
@@ -625,6 +357,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
