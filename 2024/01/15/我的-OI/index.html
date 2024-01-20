@@ -18,16 +18,19 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="图论 连通性 强连通分量 缩点 点双   最短路 dijkstra   LCA 倍增 Tarjan 树链剖分   拓扑排序   数据结构 树状数组 - BIT 并查集 - DSU        图论连通性强连通分量123456789101112131415161718192021void tarjan (int u) &#123;    dfn[u] &#x3D; low[u] &#x3D; ++tmp">
+        <meta name="description" content="图论 连通性 强连通分量 缩点 点双   最短路 dijkstra   LCA 倍增 Tarjan 树链剖分   拓扑排序   数据结构 树状数组 - BIT 并查集 - DSU        图论连通性强连通分量123456789101112131415161718192021void tarjan (int u) {    dfn[u] &#x3D; low[u] &#x3D; ++tmp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的 OI">
+<meta property="og:title" content="模板">
 <meta property="og:url" content="http://example.com/2024/01/15/%E6%88%91%E7%9A%84-OI/index.html">
 <meta property="og:site_name" content="固态H2O&#39;s 垃圾堆">
-<meta property="og:description" content="图论 连通性 强连通分量 缩点 点双   最短路 dijkstra   LCA 倍增 Tarjan 树链剖分   拓扑排序   数据结构 树状数组 - BIT 并查集 - DSU        图论连通性强连通分量123456789101112131415161718192021void tarjan (int u) &#123;    dfn[u] &#x3D; low[u] &#x3D; ++tmp">
+<meta property="og:description" content="图论 连通性 强连通分量 缩点 点双   最短路 dijkstra   LCA 倍增 Tarjan 树链剖分   拓扑排序   数据结构 树状数组 - BIT 并查集 - DSU        图论连通性强连通分量123456789101112131415161718192021void tarjan (int u) {    dfn[u] &#x3D; low[u] &#x3D; ++tmp;">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-15T14:35:08.000Z">
-<meta property="article:modified_time" content="2024-01-15T14:36:36.060Z">
+<meta property="article:modified_time" content="2024-01-20T09:53:57.985Z">
 <meta property="article:author" content="Ice_lift">
+<meta property="article:tag" content="OI">
+<meta property="article:tag" content="模板">
+<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
     
     
@@ -40,7 +43,7 @@
     
     <title>
         
-            我的 OI -
+            模板 -
         
         固态H2O&#39;s 垃圾堆
     </title>
@@ -219,6 +222,8 @@
     <!--- Font Part-->
     
     
+        <link href="https://fonts.googlefonts.cn/css?family=Fira+Mono" rel="stylesheet">
+    
     
         <link href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet">
     
@@ -228,7 +233,7 @@
     
     <script id="hexo-configurations">
     window.config = {"hostname":"example.com","root":"/","language":["zh-CN","en","default"],"path":"search.xml"};
-    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#DA8171","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":"霞鹜文楷","url":"https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Theme Redefine","subtitle":{"text":[],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":102,"backing_speed":80,"starting_delay":500,"backing_delay":1300,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":"霞鹜文楷","url":"https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"},"social_links":{"enable":true,"links":{"github":"https://github.com/qinym-d","instagram":null,"zhihu":null,"twitter":null,"email":"q173096@163.com","fa-solid fa-circle-user":"https://www.luogu.com.cn/user/857626","fa-solid fa-cloud-arrow-up":"https://1.14.74.34","fa-brands fa-bilibili":"https://space.bilibili.com/515198265"},"qrs":null}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"欢迎投喂建议","links":{"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"标签":{"path":"/tags","icon":"fa-regular fa-tags"},"分类":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":["摸鱼ing...","努力ing..."]},"code_block":{"copy":true,"style":"mac","font":{"enable":true,"family":"Fira Code","url":"https://fonts.googlefonts.cn/css?family=Fira+Mono"}},"toc":{"enable":true,"max_depth":6,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"随便逛逛...","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#DA8171","secondary":null},"global":{"fonts":{"chinese":{"enable":true,"family":"霞鹜文楷","url":"https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"固态 H2O's 垃圾堆","subtitle":{"text":["Don't forget yourself."],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":102,"backing_speed":80,"starting_delay":500,"backing_delay":1300,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":"霞鹜文楷","url":"https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css"},"social_links":{"enable":true,"links":{"github":"https://github.com/qinym-d","instagram":null,"zhihu":null,"twitter":null,"email":"q173096@163.com","fa-solid fa-circle-user":"https://www.luogu.com.cn/user/857626","fa-solid fa-cloud-arrow-up":"https://1.14.74.34","fa-brands fa-bilibili":"https://space.bilibili.com/515198265"},"qrs":null}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":true,"type":"fixed","audios":[{"name":"Inverted World,","artist":"ARForest,","url":"http://music.163.com/song/media/outer/url?id=2099631232.mp3,","cover":"https://p1.music.126.net/_Zs2T7NBtRClferLDOAJvQ==/109951169054501207.jpg,"},{"name":"春を告げる","artist":"yama","url":"http://music.163.com/song/media/outer/url?id=1486106274.mp3","cover":"http://p2.music.126.net/_JfzHy2FnCK5_-OUMWh5Vg==/109951166635875996.jpg?param=130y130"}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.0","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Friends":{"icon":"fa-solid fa-link","path":"/links/"}},"search":{"enable":true,"preload":true},"tags":{"Tags":{"icon":"fa-solid fa-tags","path":"/tags/"}},"categories":{"Categories":{"icon":"fa-solid fa-folder","path":"/categories/"}}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":"欢迎投喂建议","links":{"归档":{"path":"/archives","icon":"fa-regular fa-archive"},"标签":{"path":"/tags","icon":"fa-regular fa-tags"},"分类":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/1/14"};
     window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
     window.data = {"masonry":false};
   </script>
@@ -254,7 +259,119 @@
 <link rel="stylesheet" href="/fontawesome/sharp-solid.min.css">
 
     
-<meta name="generator" content="Hexo 7.0.0"></head>
+<meta name="generator" content="Hexo 7.0.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -329,6 +446,23 @@
                                 
                             </li>
                     
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/links/"
+                                        >
+                                    <i class="fa-solid fa-link fa-fw"></i>
+                                    友情链接
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
                     
                         <li class="navbar-item search search-popup-trigger">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -393,15 +527,35 @@
                         
                     </li>
             
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/links/"
+                        >
+                            <span>
+                                友情链接
+                            </span>
+                            
+                                <i class="fa-solid fa-link fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
         </ul>
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
@@ -431,7 +585,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">我的 OI</h1>
+                    <h1 class="article-title-regular text-second-text-color text-4xl md:text-6xl font-bold px-2 sm:px-6 md:px-8 py-3">模板</h1>
                 </div>
             
             </div>
@@ -443,9 +597,9 @@
                 </div>
                 <div class="info flex flex-col justify-between">
                     <div class="author flex items-center">
-                        <span class="name text-default-text-color text-lg font-semibold">John Doe</span>
+                        <span class="name text-default-text-color text-lg font-semibold">Ice_lift</span>
                         
-                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">摸鱼ing...</span>
                         
                     </div>
                     <div class="meta-info">
@@ -459,17 +613,60 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-01-15 22:36:36</span>
-            <span class="mobile">2024-01-15 22:36:36</span>
+            <span class="desktop">2024-01-20 17:53:57</span>
+            <span class="mobile">2024-01-20 17:53:57</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/OI/">OI</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/OI/">OI</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E6%A8%A1%E6%9D%BF/">模板</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/C/">C++</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
     
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>865 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>5 分钟</span>
+        </span>
     
     
         <span class="article-pv article-meta-item">
@@ -524,35 +721,35 @@
 
 
 
-<h1 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h1><h2 id="连通性"><a href="#连通性" class="headerlink" title="连通性"></a>连通性</h2><h3 id="强连通分量"><a href="#强连通分量" class="headerlink" title="强连通分量"></a>强连通分量</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">tarjan</span> <span class="params">(<span class="type">int</span> u)</span> </span>&#123;</span><br><span class="line">    dfn[u] = low[u] = ++tmp;</span><br><span class="line">    st[++top] = u;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = hd[u]; i; i = e[i].nxt) &#123;</span><br><span class="line">        <span class="type">int</span> v = e[i].to;</span><br><span class="line">        <span class="keyword">if</span> (!dfn[v]) &#123;</span><br><span class="line">            <span class="built_in">tarjan</span> (v);</span><br><span class="line">            low[u] = <span class="built_in">min</span> (low[u], low[v]);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (!bel[v]) low[u] = <span class="built_in">min</span> (low[u], dfn[v]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (dfn[u] == low[u]) &#123;</span><br><span class="line">        siz[++idx] = <span class="number">1</span>;</span><br><span class="line">        bel[u] = idx;</span><br><span class="line">        <span class="keyword">while</span> (st[top] != u) &#123;</span><br><span class="line">            bel[st[top]] = idx;</span><br><span class="line">            siz[idx]++;</span><br><span class="line">            top--;</span><br><span class="line">        &#125;</span><br><span class="line">        top--;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h1 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h1><h2 id="连通性"><a href="#连通性" class="headerlink" title="连通性"></a>连通性</h2><h3 id="强连通分量"><a href="#强连通分量" class="headerlink" title="强连通分量"></a>强连通分量</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">tarjan</span> <span class="params">(<span class="type">int</span> u)</span> </span>{</span><br><span class="line">    dfn[u] = low[u] = ++tmp;</span><br><span class="line">    st[++top] = u;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = hd[u]; i; i = e[i].nxt) {</span><br><span class="line">        <span class="type">int</span> v = e[i].to;</span><br><span class="line">        <span class="keyword">if</span> (!dfn[v]) {</span><br><span class="line">            <span class="built_in">tarjan</span> (v);</span><br><span class="line">            low[u] = <span class="built_in">min</span> (low[u], low[v]);</span><br><span class="line">        } <span class="keyword">else</span> <span class="keyword">if</span> (!bel[v]) low[u] = <span class="built_in">min</span> (low[u], dfn[v]);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span> (dfn[u] == low[u]) {</span><br><span class="line">        siz[++idx] = <span class="number">1</span>;</span><br><span class="line">        bel[u] = idx;</span><br><span class="line">        <span class="keyword">while</span> (st[top] != u) {</span><br><span class="line">            bel[st[top]] = idx;</span><br><span class="line">            siz[idx]++;</span><br><span class="line">            top--;</span><br><span class="line">        }</span><br><span class="line">        top--;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="缩点"><a href="#缩点" class="headerlink" title="缩点"></a>缩点</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= m; i ++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (bel[x[i]] != bel[y[i]]) &#123;</span><br><span class="line">        <span class="built_in">add</span> (bel[x[i]], bel[y[i]], W[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="缩点"><a href="#缩点" class="headerlink" title="缩点"></a>缩点</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i &lt;= m; i ++) {</span><br><span class="line">    <span class="keyword">if</span> (bel[x[i]] != bel[y[i]]) {</span><br><span class="line">        <span class="built_in">add</span> (bel[x[i]], bel[y[i]], W[i]);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="点双"><a href="#点双" class="headerlink" title="点双"></a>点双</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> low[M], dfn[M], st[M], top, tmp, idx;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; G[M], dc, dcc[M]; <span class="comment">// dcc: 点双 dc：割点 G: 图</span></span><br><span class="line"><span class="type">bool</span> mark[M];<span class="comment">// 是否为割点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">tarjan</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> root)</span> </span>&#123;</span><br><span class="line">	dfn[u] = low[u] = ++ tmp;</span><br><span class="line">	st[++ top] = u;</span><br><span class="line">	<span class="type">int</span> chi = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) &#123;</span><br><span class="line">		<span class="keyword">if</span>(!dfn[v]) &#123;</span><br><span class="line">			chi ++;</span><br><span class="line">			<span class="built_in">tarjan</span>(v, root);</span><br><span class="line">			low[u] = <span class="built_in">min</span>(low[u], low[v]);</span><br><span class="line">			<span class="keyword">if</span>((low[v] &gt;= dfn[u] &amp;&amp; u != root &amp;&amp; !mark[u]) || (u == root &amp;&amp; chi &gt;= <span class="number">2</span>)) &#123;</span><br><span class="line">				mark[u] = <span class="number">1</span>;</span><br><span class="line">				dc.<span class="built_in">push_back</span>(u);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span>(low[v] &gt;= dfn[u]) &#123;</span><br><span class="line">				idx ++;</span><br><span class="line">				<span class="keyword">do</span>&#123;</span><br><span class="line">					<span class="type">int</span> w = st[top --];</span><br><span class="line">					dcc[idx].<span class="built_in">push_back</span>(w);</span><br><span class="line">				&#125;<span class="keyword">while</span>(st[top + <span class="number">1</span>] != v);</span><br><span class="line">				dcc[idx].<span class="built_in">push_back</span>(u);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">else</span> low[u] = <span class="built_in">min</span>(low[u], dfn[v]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h3 id="点双"><a href="#点双" class="headerlink" title="点双"></a>点双</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> low[M], dfn[M], st[M], top, tmp, idx;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt; G[M], dc, dcc[M]; <span class="comment">// dcc: 点双 dc：割点 G: 图</span></span><br><span class="line"><span class="type">bool</span> mark[M];<span class="comment">// 是否为割点</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">tarjan</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> root)</span> </span>{</span><br><span class="line">	dfn[u] = low[u] = ++ tmp;</span><br><span class="line">	st[++ top] = u;</span><br><span class="line">	<span class="type">int</span> chi = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) {</span><br><span class="line">		<span class="keyword">if</span>(!dfn[v]) {</span><br><span class="line">			chi ++;</span><br><span class="line">			<span class="built_in">tarjan</span>(v, root);</span><br><span class="line">			low[u] = <span class="built_in">min</span>(low[u], low[v]);</span><br><span class="line">			<span class="keyword">if</span>((low[v] &gt;= dfn[u] &amp;&amp; u != root &amp;&amp; !mark[u]) || (u == root &amp;&amp; chi &gt;= <span class="number">2</span>)) {</span><br><span class="line">				mark[u] = <span class="number">1</span>;</span><br><span class="line">				dc.<span class="built_in">push_back</span>(u);</span><br><span class="line">			}</span><br><span class="line">			<span class="keyword">if</span>(low[v] &gt;= dfn[u]) {</span><br><span class="line">				idx ++;</span><br><span class="line">				<span class="keyword">do</span>{</span><br><span class="line">					<span class="type">int</span> w = st[top --];</span><br><span class="line">					dcc[idx].<span class="built_in">push_back</span>(w);</span><br><span class="line">				}<span class="keyword">while</span>(st[top + <span class="number">1</span>] != v);</span><br><span class="line">				dcc[idx].<span class="built_in">push_back</span>(u);</span><br><span class="line">			}</span><br><span class="line">		} <span class="keyword">else</span> low[u] = <span class="built_in">min</span>(low[u], dfn[v]);</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="最短路"><a href="#最短路" class="headerlink" title="最短路"></a>最短路</h2><h3 id="dijkstra"><a href="#dijkstra" class="headerlink" title="dijkstra"></a>dijkstra</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="type">int</span> dis, u;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&gt;(<span class="type">const</span> node&amp; a)<span class="type">const</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> dis &gt; a.dis;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">int</span> dis[M];</span><br><span class="line">priority_queue&lt;node, vector&lt;node&gt;, greater&lt;node&gt; &gt;q;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Dijkstra</span><span class="params">(<span class="type">int</span> s)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(dis, <span class="number">0x3f3f3f3f</span>, <span class="keyword">sizeof</span> dis);</span><br><span class="line">    dis[s] = <span class="number">0</span>;</span><br><span class="line">    q.<span class="built_in">push</span>(&#123;<span class="number">0</span>, s&#125;);</span><br><span class="line">    <span class="keyword">while</span> (!q.<span class="built_in">empty</span>()) &#123;</span><br><span class="line">        <span class="type">int</span> u = q.<span class="built_in">top</span>().u;</span><br><span class="line">        q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="keyword">if</span> (vis[u]) <span class="keyword">continue</span>;</span><br><span class="line">        vis[u] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = hd[u];i;i = e[i].nxt)&#123;</span><br><span class="line">            <span class="type">int</span> v = e[i].to,w = e[i].w;</span><br><span class="line">            <span class="keyword">if</span> (dis[v] &gt; dis[u] + w) &#123;</span><br><span class="line">                dis[v] = dis[u] + w;</span><br><span class="line">                q.<span class="built_in">push</span>(&#123;dis[v], v&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<h2 id="LCA"><a href="#LCA" class="headerlink" title="LCA"></a>LCA</h2><h3 id="倍增"><a href="#倍增" class="headerlink" title="倍增"></a>倍增</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> f)</span> </span>&#123;</span><br><span class="line">    fa[u][<span class="number">0</span>] = f, dep[u] = dep[f] + <span class="number">1</span>, vis[u] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; ; i ++) &#123;</span><br><span class="line">        fa[u][i] = fa[fa[u][i - <span class="number">1</span>]][i - <span class="number">1</span>];</span><br><span class="line">        ma[u][i] = <span class="built_in">min</span>(ma[fa[u][i - <span class="number">1</span>]][i - <span class="number">1</span>] , ma[u][i - <span class="number">1</span>]);</span><br><span class="line">        <span class="keyword">if</span> (fa[u][i] == <span class="number">0</span>) &#123;</span><br><span class="line">            k = <span class="built_in">max</span>(k, i - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> v : g[u]) &#123;</span><br><span class="line">        <span class="keyword">if</span> (v.to != f) &#123;</span><br><span class="line">            ma[v.to][<span class="number">0</span>] = v.w;</span><br><span class="line">            <span class="built_in">dfs</span>(v.to, u);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lca</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> v)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(dep[u] &lt; dep[v]) <span class="built_in">swap</span>(u, v);</span><br><span class="line">    <span class="type">int</span> x = u, y = v;</span><br><span class="line">    <span class="type">int</span> lu = INF, lv = INF;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = k; i &gt;= <span class="number">0</span>; i --)&#123;</span><br><span class="line">        <span class="keyword">if</span>(dep[fa[u][i]] &gt;= dep[v])  lu = <span class="built_in">min</span>(ma[u][i], lu), u = fa[u][i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(u == v) <span class="keyword">return</span> <span class="built_in">min</span>(lu, lv);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = k; i &gt;= <span class="number">0</span>; i --)&#123;</span><br><span class="line">        <span class="keyword">if</span>(fa[u][i] != fa[v][i]) lu = <span class="built_in">min</span>(ma[u][i], lu), u = fa[u][i], lv = <span class="built_in">min</span>(ma[v][i], lv), v = fa[v][i];</span><br><span class="line">    &#125;</span><br><span class="line">    lu = <span class="built_in">min</span>(ma[u][<span class="number">0</span>], lu), lv = <span class="built_in">min</span>(ma[v][<span class="number">0</span>], lv);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(lu, lv);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<h3 id="Tarjan"><a href="#Tarjan" class="headerlink" title="Tarjan"></a>Tarjan</h3><h3 id="树链剖分"><a href="#树链剖分" class="headerlink" title="树链剖分"></a>树链剖分</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dep[N], f[N], top[N], son[N], siz[N], hv[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs1</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> fa)</span> </span>&#123;</span><br><span class="line">	dep[u] = dep[fa] + <span class="number">1</span>, f[u] = fa, siz[u] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) &#123;</span><br><span class="line">		<span class="keyword">if</span> (v != fa) &#123;</span><br><span class="line">			<span class="built_in">dfs1</span> (v, u);</span><br><span class="line">			siz[u] += siz[v];</span><br><span class="line">			<span class="keyword">if</span> (siz[son[u]] &lt; siz[v]) son[u] = v;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	hv[son[u]] = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs2</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> fa)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (hv[u]) top[u] = top[fa];</span><br><span class="line">	<span class="keyword">else</span> top[u] = u;</span><br><span class="line">	<span class="keyword">if</span> (!son[u]) <span class="keyword">return</span>;</span><br><span class="line">	<span class="built_in">dfs2</span>(son[u], u);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) &#123;</span><br><span class="line">		<span class="keyword">if</span> (v != son[u] &amp;&amp; v != fa)</span><br><span class="line">			<span class="built_in">dfs2</span>(v, u);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lca</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> v)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">while</span> (top[u] != top[v]) &#123;</span><br><span class="line">		<span class="keyword">if</span> (dep[top[u]] &gt; dep[top[v]]) u = f[top[u]];</span><br><span class="line">		<span class="keyword">else</span> v = f[top[v]];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> dep[u] &lt; dep[v] ? u : v;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<h2 id="最短路"><a href="#最短路" class="headerlink" title="最短路"></a>最短路</h2><h3 id="dijkstra"><a href="#dijkstra" class="headerlink" title="dijkstra"></a>dijkstra</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> {</span><br><span class="line">    <span class="type">int</span> dis, u;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span>&gt;(<span class="type">const</span> node&amp; a)<span class="type">const</span> {</span><br><span class="line">        <span class="keyword">return</span> dis &gt; a.dis;</span><br><span class="line">    }</span><br><span class="line">};</span><br><span class="line"><span class="type">int</span> dis[M];</span><br><span class="line">priority_queue&lt;node, vector&lt;node&gt;, greater&lt;node&gt; &gt;q;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Dijkstra</span><span class="params">(<span class="type">int</span> s)</span> </span>{</span><br><span class="line">    <span class="built_in">memset</span>(dis, <span class="number">0x3f3f3f3f</span>, <span class="keyword">sizeof</span> dis);</span><br><span class="line">    dis[s] = <span class="number">0</span>;</span><br><span class="line">    q.<span class="built_in">push</span>({<span class="number">0</span>, s});</span><br><span class="line">    <span class="keyword">while</span> (!q.<span class="built_in">empty</span>()) {</span><br><span class="line">        <span class="type">int</span> u = q.<span class="built_in">top</span>().u;</span><br><span class="line">        q.<span class="built_in">pop</span>();</span><br><span class="line">        <span class="keyword">if</span> (vis[u]) <span class="keyword">continue</span>;</span><br><span class="line">        vis[u] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = hd[u];i;i = e[i].nxt){</span><br><span class="line">            <span class="type">int</span> v = e[i].to,w = e[i].w;</span><br><span class="line">            <span class="keyword">if</span> (dis[v] &gt; dis[u] + w) {</span><br><span class="line">                dis[v] = dis[u] + w;</span><br><span class="line">                q.<span class="built_in">push</span>({dis[v], v});</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+<h2 id="LCA"><a href="#LCA" class="headerlink" title="LCA"></a>LCA</h2><h3 id="倍增"><a href="#倍增" class="headerlink" title="倍增"></a>倍增</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> f)</span> </span>{</span><br><span class="line">    fa[u][<span class="number">0</span>] = f, dep[u] = dep[f] + <span class="number">1</span>, vis[u] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; ; i ++) {</span><br><span class="line">        fa[u][i] = fa[fa[u][i - <span class="number">1</span>]][i - <span class="number">1</span>];</span><br><span class="line">        ma[u][i] = <span class="built_in">min</span>(ma[fa[u][i - <span class="number">1</span>]][i - <span class="number">1</span>] , ma[u][i - <span class="number">1</span>]);</span><br><span class="line">        <span class="keyword">if</span> (fa[u][i] == <span class="number">0</span>) {</span><br><span class="line">            k = <span class="built_in">max</span>(k, i - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> v : g[u]) {</span><br><span class="line">        <span class="keyword">if</span> (v.to != f) {</span><br><span class="line">            ma[v.to][<span class="number">0</span>] = v.w;</span><br><span class="line">            <span class="built_in">dfs</span>(v.to, u);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lca</span><span class="params">(<span class="type">int</span> u, <span class="type">int</span> v)</span></span>{</span><br><span class="line">    <span class="keyword">if</span>(dep[u] &lt; dep[v]) <span class="built_in">swap</span>(u, v);</span><br><span class="line">    <span class="type">int</span> x = u, y = v;</span><br><span class="line">    <span class="type">int</span> lu = INF, lv = INF;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = k; i &gt;= <span class="number">0</span>; i --){</span><br><span class="line">        <span class="keyword">if</span>(dep[fa[u][i]] &gt;= dep[v])  lu = <span class="built_in">min</span>(ma[u][i], lu), u = fa[u][i];</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span>(u == v) <span class="keyword">return</span> <span class="built_in">min</span>(lu, lv);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = k; i &gt;= <span class="number">0</span>; i --){</span><br><span class="line">        <span class="keyword">if</span>(fa[u][i] != fa[v][i]) lu = <span class="built_in">min</span>(ma[u][i], lu), u = fa[u][i], lv = <span class="built_in">min</span>(ma[v][i], lv), v = fa[v][i];</span><br><span class="line">    }</span><br><span class="line">    lu = <span class="built_in">min</span>(ma[u][<span class="number">0</span>], lu), lv = <span class="built_in">min</span>(ma[v][<span class="number">0</span>], lv);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(lu, lv);</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
+<h3 id="Tarjan"><a href="#Tarjan" class="headerlink" title="Tarjan"></a>Tarjan</h3><h3 id="树链剖分"><a href="#树链剖分" class="headerlink" title="树链剖分"></a>树链剖分</h3><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dep[N], f[N], top[N], son[N], siz[N], hv[N];</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs1</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> fa)</span> </span>{</span><br><span class="line">	dep[u] = dep[fa] + <span class="number">1</span>, f[u] = fa, siz[u] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) {</span><br><span class="line">		<span class="keyword">if</span> (v != fa) {</span><br><span class="line">			<span class="built_in">dfs1</span> (v, u);</span><br><span class="line">			siz[u] += siz[v];</span><br><span class="line">			<span class="keyword">if</span> (siz[son[u]] &lt; siz[v]) son[u] = v;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	hv[son[u]] = <span class="number">1</span>;</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs2</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> fa)</span> </span>{</span><br><span class="line">	<span class="keyword">if</span> (hv[u]) top[u] = top[fa];</span><br><span class="line">	<span class="keyword">else</span> top[u] = u;</span><br><span class="line">	<span class="keyword">if</span> (!son[u]) <span class="keyword">return</span>;</span><br><span class="line">	<span class="built_in">dfs2</span>(son[u], u);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">auto</span> v : G[u]) {</span><br><span class="line">		<span class="keyword">if</span> (v != son[u] &amp;&amp; v != fa)</span><br><span class="line">			<span class="built_in">dfs2</span>(v, u);</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">lca</span> <span class="params">(<span class="type">int</span> u, <span class="type">int</span> v)</span> </span>{</span><br><span class="line">	<span class="keyword">while</span> (top[u] != top[v]) {</span><br><span class="line">		<span class="keyword">if</span> (dep[top[u]] &gt; dep[top[v]]) u = f[top[u]];</span><br><span class="line">		<span class="keyword">else</span> v = f[top[v]];</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> dep[u] &lt; dep[v] ? u : v;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></div>
 
 <h2 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></div>
 
-<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="树状数组-BIT"><a href="#树状数组-BIT" class="headerlink" title="树状数组 - BIT"></a>树状数组 - BIT</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    <span class="type">int</span> c[N], maxn;</span><br><span class="line">    <span class="meta">#<span class="keyword">define</span> l(x) x &amp; -x</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span> <span class="params">(<span class="type">int</span> x, <span class="type">int</span> d)</span> </span>&#123;<span class="keyword">for</span> (<span class="type">int</span> i = x; i &lt;= maxn; i += <span class="built_in">l</span>(i)) c[i] += d;&#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">sum</span> <span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = x; i; i -= <span class="built_in">l</span>(i)) res += c[i];</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><h2 id="树状数组-BIT"><a href="#树状数组-BIT" class="headerlink" title="树状数组 - BIT"></a>树状数组 - BIT</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> {</span><br><span class="line">    <span class="type">int</span> c[N], maxn;</span><br><span class="line">    <span class="meta">#<span class="keyword">define</span> l(x) x &amp; -x</span></span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span> <span class="params">(<span class="type">int</span> x, <span class="type">int</span> d)</span> </span>{<span class="keyword">for</span> (<span class="type">int</span> i = x; i &lt;= maxn; i += <span class="built_in">l</span>(i)) c[i] += d;}</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">sum</span> <span class="params">(<span class="type">int</span> x)</span> </span>{</span><br><span class="line">        <span class="type">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = x; i; i -= <span class="built_in">l</span>(i)) res += c[i];</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="并查集-DSU"><a href="#并查集-DSU" class="headerlink" title="并查集 - DSU"></a>并查集 - DSU</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">DSU</span> &#123;</span><br><span class="line">    <span class="type">int</span> f[N], siz[N];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span> <span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i ++) f[i] = i, siz[i] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find</span> <span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(f[x] != x) f[x] = <span class="built_in">find</span>(f[x]);</span><br><span class="line">        <span class="keyword">return</span> f[x];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">move</span> <span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>&#123;</span><br><span class="line">        x = <span class="built_in">find</span>(x), y = <span class="built_in">find</span>(y);</span><br><span class="line">        <span class="keyword">if</span>(siz[x] &gt; siz[y]) <span class="built_in">swap</span>(x, y); <span class="comment">// 启发式合并</span></span><br><span class="line">        <span class="keyword">if</span>(x != y) &#123;</span><br><span class="line">            f[x] = y;</span><br><span class="line">            siz[y] += siz[x];</span><br><span class="line">            siz[x] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></div>
+<h2 id="并查集-DSU"><a href="#并查集-DSU" class="headerlink" title="并查集 - DSU"></a>并查集 - DSU</h2><div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">DSU</span> {</span><br><span class="line">    <span class="type">int</span> f[N], siz[N];</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">init</span> <span class="params">()</span> </span>{</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i ++) f[i] = i, siz[i] = <span class="number">1</span>;</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">find</span> <span class="params">(<span class="type">int</span> x)</span> </span>{</span><br><span class="line">        <span class="keyword">if</span>(f[x] != x) f[x] = <span class="built_in">find</span>(f[x]);</span><br><span class="line">        <span class="keyword">return</span> f[x];</span><br><span class="line">    }</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">move</span> <span class="params">(<span class="type">int</span> x, <span class="type">int</span> y)</span> </span>{</span><br><span class="line">        x = <span class="built_in">find</span>(x), y = <span class="built_in">find</span>(y);</span><br><span class="line">        <span class="keyword">if</span>(siz[x] &gt; siz[y]) <span class="built_in">swap</span>(x, y); <span class="comment">// 启发式合并</span></span><br><span class="line">        <span class="keyword">if</span>(x != y) {</span><br><span class="line">            f[x] = y;</span><br><span class="line">            siz[y] += siz[x];</span><br><span class="line">            siz[x] = <span class="number">0</span>;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></table></figure></div>
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 我的 OI</li>
-        <li><strong>作者:</strong> John Doe</li>
+        <li><strong>标题:</strong> 模板</li>
+        <li><strong>作者:</strong> Ice_lift</li>
         <li><strong>创建于
                 :</strong> 2024-01-15 22:35:08</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-01-15 22:36:36
+                    :</strong> 2024-01-20 17:53:57
             </li>
         
         <li>
@@ -574,6 +771,22 @@
             </div>
         
 
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/OI/">#OI</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/%E6%A8%A1%E6%9D%BF/">#模板</a>&nbsp;
+                    </li>
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/C/">#C++</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
@@ -651,7 +864,7 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">我的 OI</div>
+        <div class="page-title">模板</div>
         <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%BE%E8%AE%BA"><span class="nav-text">图论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="nav-text">连通性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%BA%E8%BF%9E%E9%80%9A%E5%88%86%E9%87%8F"><span class="nav-text">强连通分量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%A9%E7%82%B9"><span class="nav-text">缩点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%82%B9%E5%8F%8C"><span class="nav-text">点双</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF"><span class="nav-text">最短路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dijkstra"><span class="nav-text">dijkstra</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#LCA"><span class="nav-text">LCA</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%80%8D%E5%A2%9E"><span class="nav-text">倍增</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tarjan"><span class="nav-text">Tarjan</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86"><span class="nav-text">树链剖分</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F"><span class="nav-text">拓扑排序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-text">数据结构</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84-BIT"><span class="nav-text">树状数组 - BIT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B6%E6%9F%A5%E9%9B%86-DSU"><span class="nav-text">并查集 - DSU</span></a></li></ol></li></ol>
 
     </div>
@@ -677,7 +890,7 @@
         <div class="text-center">
             &copy;
             
-              <span>2022</span>
+              <span>2024</span>
               -
             
             2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Ice_lift</a>
@@ -945,6 +1158,14 @@
 
     
 </div>
+
+
+    <div id="aplayer"></div>
+
+<script src="/js/libs/APlayer.min.js"></script>
+
+
+<script src="/js/plugins/aplayer.js"></script>
 
 
 </body>
